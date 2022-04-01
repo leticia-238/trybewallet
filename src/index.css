@@ -1,13 +1,86 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: linear-gradient
+    (90deg, rgb(102, 93, 222) 15%, rgb(69, 69, 227) 54%, rgb(16, 161, 190) 90%);
+  font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Open Sans, sans-serif;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: rgb(69, 69, 227);
+  box-shadow: 0 0 10px rgb(20, 75, 148);
+  color: #02024b;
+  margin: 20vh auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-label {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.btn , .input {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  padding: 8px;
+}
+
+.input {
+  background-color: #eaeaff;
+  color: rgb(32, 32, 32);
+  margin: 5px 0;
+}
+
+.form-input {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+}
+
+.btn-form {
+  background-color: rgb(16, 161, 190);
+  color: rgb(178, 228, 238);
+  font-weight: 400;
+  margin: 10px auto;
+  width: 100px;
+}
+
+.btn-form:hover {
+  background-color: rgb(19, 183, 216);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.icon-wallet {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.title-wallet {
+  font-size: 2rem;
+  margin: auto 10px;
 }
