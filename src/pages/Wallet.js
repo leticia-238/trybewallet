@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import fetchExchange from '../services/fetchExchangeApi';
+import ExpenseForm from '../components/ExpenseForm';
 
 class Wallet extends Component {
   componentDidMount() {
@@ -12,17 +13,16 @@ class Wallet extends Component {
 
   render() {
     return (
-      <Header />
+      <>
+        <Header />
+        <ExpenseForm />
+      </>
     );
   }
 }
-
-const mapStateToProps = ({ wallet }) => ({
-  currencies: wallet,
-});
 
 Wallet.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps)(Wallet);
+export default connect()(Wallet);
