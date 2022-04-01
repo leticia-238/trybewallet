@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { GiWallet } from 'react-icons/gi';
+import Logo from '../components/Logo';
 
 class Login extends Component {
   constructor() {
@@ -32,12 +32,7 @@ class Login extends Component {
     const { saveUser } = this.props;
     return (
       <form className="login-form">
-        <div className="logo">
-          <figure>
-            <GiWallet className="icon-wallet" />
-          </figure>
-          <h2 className="title-wallet">TrybeWallet</h2>
-        </div>
+        <Logo />
         <label htmlFor="email-input" className="label form-label">
           email
           <input
