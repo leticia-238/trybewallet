@@ -16,9 +16,7 @@ function App(props) {
           : <Login />}
       </Route>
       <Route exact path="/carteira">
-        {isLogged
-          ? <Wallet />
-          : <Redirect to="/" />}
+        <Wallet />
       </Route>
     </Switch>
   );
