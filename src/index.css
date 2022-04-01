@@ -5,8 +5,7 @@
 }
 
 body {
-  background: linear-gradient
-    (90deg, rgb(102, 93, 222) 15%, rgb(69, 69, 227) 54%, rgb(16, 161, 190) 90%);
+  background: linear-gradient(90deg, rgb(102, 93, 222) 15%, rgb(69, 69, 227) 54%, rgb(16, 161, 190) 90%);
   font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Open Sans, sans-serif;
   height: 100vh;
 }
@@ -83,4 +82,39 @@ body {
 .title-wallet {
   font-size: 2rem;
   margin: auto 10px;
+}
+
+.header{
+  display: flex;
+  background-color: #3434aa;
+}
+
+.header .email-field{
+  background-color: #6c6cf5;
+  color: rgb(32, 32, 32);
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header-field{
+  display: flex;
+  align-items: center;
+  background-color: #6c6cf5;
+  color: rgb(32, 32, 32);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.header .total-field{
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.header .header-currency-field{
+  font-weight: 500;
 }
