@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { saveUser } from '../actions';
 import Logo from '../components/Logo';
 
 class Login extends Component {
@@ -29,7 +30,7 @@ class Login extends Component {
 
   render() {
     const { email, password, isValidLogin } = this.state;
-    const { saveUser } = this.props;
+    const { dispatch } = this.props;
     return (
       <form className="login-form">
         <Logo />
@@ -61,7 +62,7 @@ class Login extends Component {
           type="button"
           className="btn btn-form"
           disabled={ !isValidLogin }
-          onClick={ () => saveUser(email) }
+          onClick={ () => dispatch(saveUser(email)) }
         >
           Entrar
         </button>
@@ -70,12 +71,8 @@ class Login extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  saveUser: (email) => dispatch({ type: 'SAVE_USER', email, isLogged: true }),
-});
-
 Login.propTypes = {
-  saveUser: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect()(Login);

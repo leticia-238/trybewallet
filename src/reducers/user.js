@@ -1,15 +1,15 @@
+import { SAVE_USER } from '../actions';
+
 const INITIAL_STATE = {
   email: '',
   isLogged: false,
 };
 
-const SAVE_USER = 'SAVE_USER';
-
 const user = (state = INITIAL_STATE, action) => {
-  const { email, isLogged } = action;
+  const { email } = action;
   switch (action.type) {
   case SAVE_USER:
-    return { email, isLogged };
+    return { email, isLogged: true };
   default:
     return state;
   }
