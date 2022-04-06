@@ -3,20 +3,20 @@ import {
   RECEIVE_DATA_CURRENCIES,
   SAVE_EXPENSE }
 from '../actions';
+import formatToCash from '../helpers/formatToCash';
 
 const INITIAL_STATE = {
   currencies: [],
   expenses: [],
-  totalExpenses: 0,
+  totalExpenses: '0.00',
   currenciesData: {},
   isFetching: false,
 };
 
 const calcTotalExpenses = (total, { value, currency, exchangeRates }) => {
   const exchangeValue = exchangeRates[currency].ask;
-  let totalValue = total + parseFloat(value) * parseFloat(exchangeValue);
-  totalValue = `${totalValue}`.match(/[0-9]+\.[0-9]{2}/g);
-  return parseFloat(totalValue);
+  const totalValue = parseFloat(total) + parseFloat(value) * parseFloat(exchangeValue);
+  return formatToCash(totalValue);
 };
 
 const wallet = (state = INITIAL_STATE, action) => {

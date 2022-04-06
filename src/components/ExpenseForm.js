@@ -8,11 +8,11 @@ class ExpenseForm extends Component {
   constructor() {
     super();
     this.defaultState = {
-      value: 0,
+      value: '0.00',
       description: '',
       currency: 'USD',
-      method: '',
-      tag: '',
+      method: 'Dinheiro',
+      tag: 'Alimentação',
     };
 
     this.state = {
