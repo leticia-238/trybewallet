@@ -8,7 +8,7 @@ class ExpenseForm extends Component {
   constructor() {
     super();
     this.defaultState = {
-      value: '0.00',
+      value: '0',
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
