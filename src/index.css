@@ -24,17 +24,20 @@ body {
   font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Open Sans, sans-serif;
 }
 
+input {
+  appearance: textfield;
+}
+
+input::-webkit-outer-spin-button , input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 
 .label {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.form-label {
   font-weight: 400;
-  margin: 10px 0;
+  text-align: center;
 }
 
 .btn , .input {
@@ -49,27 +52,19 @@ body {
 .input {
   background-color: #eaeaff;
   color: rgb(32, 32, 32);
-  margin: 5px 0;
-}
-
-.form-input {
   flex-grow: 1;
+  margin: 5px 0;
   text-align: center;
 }
 
 .btn {
-  display: block;
-}
-
-.btn-form {
   background-color: var(--color4);
   color: var(--color6);
+  display: block;
   font-weight: 400;
-  margin: 10px auto;
-  width: 100px;
 }
 
-.btn-form:hover {
+.btn:hover {
   background-color: var(--color5);
   color: white;
 }

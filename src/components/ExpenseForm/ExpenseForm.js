@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { saveExpense } from '../actions';
-import fetchExchange from '../services/fetchExchangeApi';
+import { saveExpense } from '../../actions';
+import fetchExchange from '../../services/fetchExchangeApi';
+import './ExpenseForm.css';
 
 class ExpenseForm extends Component {
   constructor() {
@@ -28,35 +29,35 @@ class ExpenseForm extends Component {
     const { value, description, currency, method, tag } = this.state;
     const { currencies, dispatch } = this.props;
     return (
-      <form>
-        <label htmlFor="value-input">
-          Valor
-          <input
-            type="number"
-            id="value-input"
-            name="value"
-            data-testid="value-input"
-            value={ value }
-            onChange={ this.handleInput }
-          />
-        </label>
-        <label htmlFor="description-input">
+      <form className="expense-form">
+        <label htmlFor="description-input" className="label">
           Descrição
           <input
             type="text"
             id="description-input"
             name="description"
-            data-testid="description-input"
+            className="input"
             value={ description }
             onChange={ this.handleInput }
           />
         </label>
-        <label htmlFor="currency-input">
+        <label htmlFor="value-input" className="label value">
+          Valor
+          <input
+            type="number"
+            id="value-input"
+            name="value"
+            className="input"
+            value={ value }
+            onChange={ this.handleInput }
+          />
+        </label>
+        <label htmlFor="currency-input" className="label currency">
           Moeda
           <select
             id="currency-input"
             name="currency"
-            data-testid="currency-input"
+            className="input"
             value={ currency }
             onChange={ this.handleInput }
           >
@@ -67,12 +68,12 @@ class ExpenseForm extends Component {
             ))}
           </select>
         </label>
-        <label htmlFor="method-input">
+        <label htmlFor="method-input" className="label">
           Método de pagamento
           <select
             id="method-input"
             name="method"
-            data-testid="method-input"
+            className="input"
             onChange={ this.handleInput }
             value={ method }
           >
@@ -81,12 +82,12 @@ class ExpenseForm extends Component {
             <option value="Cartão de débito">Cartão de débito</option>
           </select>
         </label>
-        <label htmlFor="tag-input">
+        <label htmlFor="tag-input" className="label">
           Categoria
           <select
             id="tag-input"
             name="tag"
-            data-testid="tag-input"
+            className="input"
             onChange={ this.handleInput }
             value={ tag }
           >
@@ -99,6 +100,7 @@ class ExpenseForm extends Component {
         </label>
         <button
           type="button"
+          className="btn"
           onClick={ () => {
             dispatch(saveExpense(this.state));
             dispatch(fetchExchange());

@@ -35,33 +35,31 @@ class Login extends Component {
     return (
       <form className="login-form">
         <Logo />
-        <label htmlFor="email-input" className="label form-label">
+        <label htmlFor="email-input" className="label">
           email
           <input
             type="text"
             id="email-input"
-            className="input form-input"
+            className="input"
             name="email"
-            data-testid="email-input"
             value={ email }
             onChange={ this.handleInput }
           />
         </label>
-        <label htmlFor="password-input" className="label form-label">
+        <label htmlFor="password-input" className="label">
           senha
           <input
             type="password"
             id="password-input"
-            className="input form-input"
+            className="input"
             name="password"
-            data-testid="password-input"
             value={ password }
             onChange={ this.handleInput }
           />
         </label>
         <button
           type="button"
-          className="btn btn-form"
+          className="btn"
           disabled={ !isValidLogin }
           onClick={ () => dispatch(saveUser(email)) }
         >

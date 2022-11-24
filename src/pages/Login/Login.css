@@ -7,3 +7,14 @@
   max-width: 400px;
   padding: 20px;
 }
+
+.login-form .label {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.login-form .btn {
+  margin: 20px auto 10px;
+  width: 100px;
+}
+

@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Login from './pages/Login/Login';
-import Wallet from './pages/Wallet';
+import Wallet from './pages/Wallet/Wallet';
 
 function App(props) {
   const { isLogged } = props;

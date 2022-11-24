@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import formatToCash from '../helpers/formatToCash';
+import formatToCash from '../../helpers/formatToCash';
+import './ExpensesTable.css';
 
 class ExpensesTable extends Component {
   render() {
     const { expenses } = this.props;
     return (
-      <table>
+      <table className="expenses-table">
         <thead>
           <tr>
             <th>Descrição</th>

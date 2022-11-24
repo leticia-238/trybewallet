@@ -1,0 +1,25 @@
+.expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: form;
+}
+
+.expense-form .label {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.label.currency , .label.value {
+  width: calc(50% - 5px);
+}
+
+.label.value {
+  margin-right: 10px;
+}
+
+.expense-form .btn {
+  flex-grow: 1;
+  margin: 10px 0;
+}
+
