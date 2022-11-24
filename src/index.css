@@ -4,29 +4,26 @@
   padding: 0;
 }
 
-:root{
-  --color1: rgb(245, 245, 245);
+:root {
+
+  --color1: whitesmoke;
+
   --color2: rgb(107, 107, 243);
+
   --color3: rgb(27, 27, 124);
+
   --color4: rgb(7, 180, 214);
-  --color5:rgb(38, 206, 240);
-  --color6:rgb(189, 242, 253);
+
+  --color5: rgb(38, 206, 240);
+
+  --color6: rgb(189, 242, 253);
 }
 
 body {
-  background: var(--color1) ;
+  background: var(--color1);
   font-family: -apple-system, Segoe UI, Roboto, Ubuntu, Open Sans, sans-serif;
 }
 
-.login-form {
-  background-color:var(--color2) ;
-  box-shadow: 0 0 10px rgb(136, 136, 136);
-  color: var(--color3);
-  margin: 20vh auto;
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 4px;
-}
 
 .label {
   display: flex;
@@ -73,65 +70,7 @@ body {
 }
 
 .btn-form:hover {
-  background-color:var(--color5) ;
+  background-color: var(--color5);
   color: white;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-.icon-wallet {
-  display: block;
-  font-size: 2.5rem;
-}
-
-.title-wallet {
-  font-size: 2rem;
-  margin: auto 10px;
-}
-
-.header{
-  display: flex;
-  align-items: center;
-  background-color: rgb(85, 85, 241);
-  color: var(--color3);
-  padding: 0 20px;
-}
-
-.header .logo{
-  flex-grow: 1;
-  justify-content: flex-start;
-}
-
-.header .email-field{
-  background-color: var(--color2);
-  color: rgb(32, 32, 32);
-  margin: 5px 20px;
-  padding: 5px;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.header-field {
-  display: flex;
-  align-items: center;
-  background-color: var(--color2);
-  color: rgb(32, 32, 32);
-  margin: 5px;
-  padding: 5px;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-.header .total-field{
-  font-weight: 400;
-  margin-right: 10px;
-}
-
-.header .header-currency-field{
-  font-weight: 500;
-}

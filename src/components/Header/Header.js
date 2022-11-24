@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Logo from './Logo';
+import Logo from '../Logo/Logo';
+import './Header.css';
 
 class Header extends Component {
   render() {

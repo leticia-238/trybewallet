@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { saveUser } from '../actions';
-import Logo from '../components/Logo';
+import { saveUser } from '../../actions';
+import Logo from '../../components/Logo/Logo';
+import './Login.css';
 
 class Login extends Component {
   constructor() {

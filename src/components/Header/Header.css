@@ -1,0 +1,42 @@
+.header {
+  align-items: center;
+  background-color: rgb(85, 85, 241);
+  color: var(--color3);
+  display: flex;
+  padding: 0 20px;
+}
+
+.header .logo {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.header .email-field {
+  background-color: var(--color2);
+  border-radius: 4px;
+  color: rgb(32, 32, 32);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 5px 20px;
+  padding: 5px;
+}
+
+.header-field {
+  align-items: center;
+  background-color: var(--color2);
+  border-radius: 4px;
+  color: rgb(32, 32, 32);
+  display: flex;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.header .total-field {
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.header .header-currency-field {
+  font-weight: 500;
+}

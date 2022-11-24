@@ -3,7 +3,7 @@ import { Redirect, Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Login from './pages/Login';
+import Login from './pages/Login/Login';
 import Wallet from './pages/Wallet';
 
 function App(props) {

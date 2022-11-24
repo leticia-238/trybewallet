@@ -1,5 +1,6 @@
 import { GiWallet } from 'react-icons/gi';
 import React from 'react';
+import './Logo.css';
 
 function Logo() {
   return (
@@ -7,7 +8,7 @@ function Logo() {
       <figure>
         <GiWallet className="icon-wallet" />
       </figure>
-      <h2 className="title-wallet">TrybeWallet</h2>
+      <h2 className="title-wallet">Wallet</h2>
     </div>
   );
 }
