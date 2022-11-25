@@ -1,7 +1,8 @@
 .expense-form {
   display: flex;
   flex-wrap: wrap;
-  grid-area: form;
+  margin: auto;
+  max-width: 250px;
 }
 
 .expense-form .label {

@@ -9,7 +9,8 @@ class ExpensesTable extends Component {
     const { expenses } = this.props;
     return (
       <table className="expenses-table">
-        <thead>
+        <caption>Moeda de conversão: Real</caption>
+        <thead className="table-titles">
           <tr>
             <th>Descrição</th>
             <th>Tag</th>
@@ -18,11 +19,9 @@ class ExpensesTable extends Component {
             <th>Moeda</th>
             <th>Câmbio utilizado</th>
             <th>Valor convertido</th>
-            <th>Moeda de conversão</th>
-            <th>Editar/Excluir</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-items">
           {expenses
             .map(({ currency, id, description, tag, method, value, exchangeRates }) => {
               const { ask, name } = exchangeRates[currency];
@@ -39,8 +38,6 @@ class ExpensesTable extends Component {
                       formatToCash(parseFloat(value) * parseFloat(ask))
                     }
                   </td>
-                  <td>Real</td>
-                  <td>Editar/Excluir</td>
                 </tr>
               );
             })}

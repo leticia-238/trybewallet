@@ -1,6 +1,22 @@
-.wallet-page {
-  display: grid;
-  grid-template-areas: 'header header'
-    'form table';
-  grid-template-columns: 250px auto;
+.main-content {
+  padding: 10px;
 }
+
+.wrapper-table {
+  overflow-x: auto;
+}
+
+@media screen and ( min-width : 1050px ) {
+
+  .main-content {
+    align-items: flex-start;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 250px auto;
+  }
+
+  .wrapper-table {
+    overflow-x: visible;
+  }
+}
+

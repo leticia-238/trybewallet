@@ -3,7 +3,6 @@
   background-color: rgb(85, 85, 241);
   color: var(--color3);
   display: flex;
-  grid-area: header;
   padding: 0 20px;
 }
 

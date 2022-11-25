@@ -15,11 +15,15 @@ class Wallet extends Component {
 
   render() {
     return (
-      <div className="wallet-page">
+      <>
         <Header />
-        <ExpenseForm />
-        <ExpensesTable />
-      </div>
+        <main className="main-content">
+          <ExpenseForm />
+          <div className="wrapper-table">
+            <ExpensesTable />
+          </div>
+        </main>
+      </>
     );
   }
 }

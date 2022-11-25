@@ -1,3 +1,23 @@
 .expenses-table {
-  grid-area: table;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin: auto;
+  text-align: center;
+}
+
+.expenses-table caption {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.expenses-table td {
+  padding: 8px 3px;
+}
+
+.expenses-table th {
+  padding: 8px;
+}
+
+.table-items tr:nth-child( 2n + 1 ) {
+  background-color: var(--color6);
 }
