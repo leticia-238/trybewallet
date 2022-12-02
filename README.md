@@ -1,5 +1,5 @@
 <h1 align="center">
-  :purse::dollar: Wallet :credit_card:
+  :purse: Wallet :money_with_wings:
 </h1>
 
 &emsp;
@@ -13,11 +13,11 @@ Wallet é uma carteira de controle de gastos com conversor de moedas.
 Esta aplicação permite ao usuário fazer login, adicionar um gasto, visualizar uma tabelas com seus gastos e visualizar o total de gastos convertido para uma moeda de escolha.
 
 <p align="center">
-  <img width="500px" src="./screen-expenses-wallet.png" alt="Imagem da tela da carteira" />
+  <img width="500px" src="./screen-login-wallet.png" alt="Imagem da tela de login" />
 </p>
 
 <p align="center">
-  <img width="500px" src="./screen-login-wallet.png" alt="Imagem da tela de login" />
+  <img width="500px" src="./screen-expenses-wallet.png" alt="Imagem da tela da carteira" />
 </p>
 
 Essa aplicação foi feita em [React](https://pt-br.reactjs.org/docs/getting-started.html) utilizando o conjunto de ferramentas [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html) e o [React Router](https://v5.reactrouter.com/) para navegação entre as rotas.
